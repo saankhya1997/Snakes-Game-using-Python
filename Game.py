@@ -120,10 +120,12 @@ def main(stdscr, f):
                 stdscr.clear()
                 stdscr.addstr(0, 0, instruction_txt)
                 stdscr.refresh()
+                time.sleep(5)
             elif menu[current_row_idx] == 'About the game':
                 stdscr.clear()
                 stdscr.addstr(0, 0, about_txt)
                 stdscr.refresh()
+                time.sleep(5)
             elif menu[current_row_idx] == 'Play':
                 heading = 'Select Difficulty Level: '
                 idx = 0
@@ -174,6 +176,5 @@ def main(stdscr, f):
             break
         print_menu(stdscr, current_row_idx, menu, 'Snakes Game')
         stdscr.refresh()
-        
-        
+                
 curses.wrapper(main, f)
