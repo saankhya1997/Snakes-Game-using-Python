@@ -176,5 +176,6 @@ def main(stdscr, f):
             break
         print_menu(stdscr, current_row_idx, menu, 'Snakes Game')
         stdscr.refresh()
-                
+               
+            
 curses.wrapper(main, f)
